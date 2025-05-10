@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nueva Ciudad</title>
+</head>
+<body>
+  <h1>Alta de Ciudad</h1>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for cat, msg in messages %}
+      <div class="{{ cat }}">{{ msg }}</div>
+    {% endfor %}
+  {% endwith %}
+  <form method="POST">
+    <label>Ciudad:</label>
+    <input type="text" name="nombre" required>
+    <label>País:</label>
+    <select id="pais" name="pais">
+      {% for p in paises %}
+        <option value="{{ p.id }}">{{ p.nombre }}</option>
+      {% endfor %}
+    </select>
+    <label>Provincia:</label>
+    <select id="provincia" name="provincia"></select>
+    <button type="submit">Guardar</button>
+  </form>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
