@@ -27,6 +27,4 @@ Ir a http://127.0.0.1:5000/admin/ciudad/nueva y probar el alta de ciudades.
 Deploy
 Render.com: conectar repo, start command python run.py.
 
-PythonAnywhere: subir código, apuntar WSGI a run.py.
-
 
