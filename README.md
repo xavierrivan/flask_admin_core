@@ -1,15 +1,5 @@
 # Flask Admin Core
 
-Proyecto MVC en Flask para administrar Ciudades con relación País→Provincia.  
-
-## Características
-
-- Modelos: Pais, Provincia, Ciudad (SQLAlchemy).  
-- Validación back‑end: nombre de ciudad único.  
-- Dropdowns dependientes (fetch API).  
-- Base de datos SQLite (`app.db`).  
-- Estructura MVC y Blueprints.  
-
 ## Instalación
 
 ```bash
